@@ -20,7 +20,19 @@ import itertools
 
 def best_hand(hand):
     "From a 7-card hand, return the best 5 card hand."
-    # Your code here
+    plays = list(itertools.combinations(hand, 5))
+    best_play = None
+    best_rank = None
+    for play in plays:
+        x = hand_rank(play)
+        if best_play == None:
+            best_play = play
+            best_rank = x
+        if x > best_rank:
+            best_play = play
+            best_rank = x
+    print(best_play)
+    return best_play
     pass
     
 # ------------------
@@ -88,11 +100,11 @@ def two_pair(ranks):
     
 def best_hand_try():
     assert (sorted(best_hand("6C 7C 8C 9C TC 5C JS".split()))
-            == ['6C', '7C', '8C', '9C', 'TC'])
+            == ['6C', '7C', '8C', '9C', 'TC']) #Straight Flush
     assert (sorted(best_hand("TD TC TH 7C 7D 8C 8S".split()))
-            == ['8C', '8S', 'TC', 'TD', 'TH'])
+            == ['8C', '8S', 'TC', 'TD', 'TH']) #Full House
     assert (sorted(best_hand("JD TC TH 7C 7D 7S 7H".split()))
-            == ['7C', '7D', '7H', '7S', 'JD'])
+            == ['7C', '7D', '7H', '7S', 'JD']) #4 of a Kind
     return 'test_best_hand passes'
 
 if __name__ == '__main__':
