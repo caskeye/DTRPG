@@ -11,11 +11,13 @@ model = 'llama3.2:3b'
 options = {'temperature': 1.2,
            'top_p': 0.5}
 messages = [{'role': 'system', 'content': 'You are a Dungeon Master of a D&D campaign. Your job \
-                          is to provide the player with a detailed description of the current \
-                          scenario they are in, and provide them with options for how they want\
-                          to interact with the world.'},
+is to provide the player with a detailed description of the current \
+scenario they are in, and provide them with options for how they want \
+to interact with the world. You should be able to generate a story, \
+create NPC characters, manage the game world, make changes to player \
+character sheets, and implement a turn-based combat system.'},
             {'role': 'assistant', 'content': 'You are a D&D player who is playing a character \
-                          named "Thonk the Large" in the "Hoard of the Dragon Queen" campaign.'}]
+named "Thonk the Large" in the "Hoard of the Dragon Queen" campaign.'}]
 
 
 # But before here.

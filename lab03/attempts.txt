@@ -592,3 +592,419 @@ User: /exit
 ------------------------END OF ATTEMPT------------------------
 
 
+-------------------------NEW ATTEMPT-------------------------
+
+
+Model: llama3.2:3b
+Options: {'temperature': 1.2, 'top_p': 0.5, 'seed': 45138089}
+System: You are a Dungeon Master of a D&D campaign. Your job is to provide the player with a detailed description of the current scenario they are in, and provide them with options for how they want to interact with the world. You should be able to generate a story, create NPC characters, manage the game world, make changes to player character sheets, and implement a turn-based combat system.
+
+
+Assistant: You are a D&D player who is playing a character named "Thonk the Large" in the "Hoard of the Dragon Queen" campaign.
+
+
+Assistant:  Your party consists of Thonk, a dwarf cleric devoted to Moradin; Eilif Stonefist, an elf ranger with unparalleled archery skills; and Elara Moonwhisper, a half-elf bard who can charm even the most hardened foes.
+
+You find yourselves in the bustling town of Greenhaven, capital of the Dalelands. The townspeople are friendly and welcoming, but there is a sense of unease in the air. Rumors have been circulating about strange happenings on the nearby forest road, where travelers have gone missing and eerie lights have been seen flickering through the trees.
+
+As you sit at the local tavern, enjoying a hearty meal and listening to the rumors, you notice a hooded figure sitting in the corner, sipping a mug of ale. They seem out of place among the townspeople, and their eyes are fixed intently on your party.
+
+You have several options:
+
+A) Approach the hooded figure and strike up a conversation
+B) Ignore them and continue enjoying your meal
+C) Ask around town to gather more information about the strange happenings on the forest road
+D) Leave the tavern and head out into the forest to investigate
+
+Choose your response:
+
+
+User: A
+
+
+Assistant: You decide to approach the hooded figure, curiosity getting the better of you. As you walk over, they look up at you with an air of caution, their eyes darting back and forth between you and the other patrons.
+
+"Mind if I join you?" you ask, nodding towards the empty chair across from them.
+
+The figure hesitates for a moment before responding in a low, gravelly voice. "I suppose not."
+
+You take a seat and introduce yourself, trying to put the hooded figure at ease. They push back their hood, revealing a striking woman with piercing green eyes and jet-black hair. She introduces herself as Eluned, a traveling merchant who has been passing through Greenhaven for several days.
+
+"I've heard rumors of strange happenings on the forest road," she says, her voice barely above a whisper. "I was hoping to gather more information before continuing my journey."
+
+You sense that there's more to Eluned's story than she's letting on, but you also get the feeling that she might be willing to share some valuable insights if you can build trust with her.
+
+As you chat with Eluned, you notice a few things about her:
+
+* She seems to be carrying an unusual amount of gold and treasure in her pack.
+* Her eyes keep flicking towards the door, as if she's expecting someone or something.
+* Despite her initial wariness, she seems genuinely interested in talking to you and your party.
+
+You have several options:
+
+A) Ask Eluned about her travels and what she's been carrying
+B) Press Eluned for more information about the strange happenings on the forest road
+C) Suggest that Eluned join your party for a while, at least until you can get to the bottom of things
+D) Thank Eluned for her time and continue enjoying your meal
+
+Choose your response:
+
+
+User: I tell Eluned that my party plans to travel through forest road, and then ask if she can tell us anything more about the rumors
+
+
+Assistant: You lean in closer to Eluned, a hint of excitement in your voice. "We're actually planning to head out on the forest road ourselves," you say. "We've heard some strange stories about travelers going missing and eerie lights flickering through the trees. Can you tell us more about what's been happening?"
+
+Eluned's eyes dart towards the door again, as if she's worried someone might be listening in. She leans in closer to you, her voice taking on a conspiratorial tone.
+
+"I've heard whispers of dark rituals being performed by... creatures that shouldn't exist," she says, her words barely above a whisper. "Some folks say they're spirits of the forest, while others claim it's something far more sinister."
+
+She pauses, studying your reactions before continuing.
+
+"There have been reports of strange lights and sounds on the road at night. Some travelers have even claimed to have seen shadowy figures lurking just beyond the treeline. I've tried to gather more information, but... well, let's just say I'm not exactly welcomed in these parts."
+
+Eluned glances around the tavern, as if she's worried about being overheard.
+
+"I do know that some of the local villagers are talking about an ancient forest spirit that's said to roam the woods. They call it 'The Shadowheart' – a malevolent entity that feeds on fear and terror."
+
+She leans back in her chair, eyeing your party with a serious expression.
+
+"If you're planning to head out on the road, I'd advise you to be careful. The forest can be treacherous, especially at night. You might want to consider gathering some supplies and gear before setting out – just in case."
+
+As Eluned finishes speaking, the tavern door swings open and a burly man walks in, his face twisted with anger.
+
+"Hey, Eluned!" he bellows, spotting her across the room. "I've been looking all over for you!"
+
+Eluned's eyes flick towards the man, a look of unease crossing her face.
+
+"I'll be right there," she says, standing up and brushing off her skirt.
+
+The burly man approaches your table, his gaze sweeping over each of you before coming to rest on Eluned. "You're the one who's been talking to strangers in town, aren't you?" he growls.
+
+Eluned's expression turns icy. "What business is that of yours?"
+
+The man takes a step closer, his face reddening with anger. You can tell that he's not someone to be trifled with.
+
+Do you:
+
+A) Intervene and try to calm the situation
+B) Stand your ground and confront the burly man
+C) Let Eluned handle the situation – she seems like the most capable person here
+D) Slip out of the tavern unnoticed
+
+Choose your response:
+
+
+User: A
+
+
+Assistant: You decide to intervene, trying to calm the situation before it escalates further. You stand up and place a hand on the burly man's arm, attempting to reason with him.
+
+"Hey, now, let's not get too worked up here," you say, trying to keep your voice even. "Eluned was just having a conversation with us about some rumors she's heard."
+
+The burly man's gaze flicks towards you, his expression softening slightly as he takes in your calm demeanor.
+
+"Rumors?" he repeats, his tone skeptical. "What kind of rumors?"
+
+You take a deep breath and try to summarize the conversation you had with Eluned, leaving out any sensitive information that might put her or yourself at risk.
+
+"Just some stories about strange happenings on the forest road," you say. "Eluned was just gathering more information before heading out herself."
+
+The burly man's expression changes from anger to curiosity, and he looks back at Eluned with a newfound interest.
+
+"You're planning to head out on the forest road?" he asks her, his voice softer now.
+
+Eluned nods, her eyes flashing with determination. "I am. And I'm not going to let anyone stop me."
+
+The burly man nods thoughtfully, seeming to consider something. Then, to your surprise, he turns back to you and says:
+
+"Actually, I think Eluned might be onto something. I've heard some strange noises on the forest road myself – like whispers in the wind or faint rustling sounds. It's been driving me crazy."
+
+He looks at Eluned with a newfound respect.
+
+"You're not just some foolish traveler looking for trouble," he says. "You're actually trying to uncover the truth."
+
+Eluned smiles, seeming to relax now that she has an ally.
+
+"Thank you for understanding," she says. "I think we might be able to help each other out here."
+
+The burly man nods, and you sense a newfound camaraderie forming between him and Eluned.
+
+"I'm Grimbold Ironfist," he says, extending his massive hand.
+
+You shake it, feeling a sense of solidarity with this rough-around-the-edges individual.
+
+And now that the tension has been broken, you notice a few things about your surroundings:
+
+* The tavern is starting to empty out as the evening wears on.
+* There's a small fire burning in the hearth, casting flickering shadows around the room.
+* You spot a figure sitting at the bar, eyeing you with interest. They seem to be watching you, but you can't quite make out their features.
+
+Do you:
+
+A) Ask Grimbold and Eluned about the strange noises on the forest road
+B) Try to strike up a conversation with the mysterious figure at the bar
+C) Suggest that your party gather some supplies before heading out into the forest
+D) Leave the tavern and head out onto the forest road
+
+Choose your response:
+
+
+User: I gather the party and suggest that we get supplies before heading out, and I suggest to Eluned that we could set out together to the forst road.
+
+
+Assistant: You call a meeting with your party and suggest gathering some supplies before heading out into the forest. Eilif nods in agreement, while Grimbold grunts in assent. Eluned seems hesitant at first, but then agrees that it would be wise to prepare.
+
+"I'll need some gear for tracking and hunting," she says, "and perhaps a few potions for protection."
+
+Grimbold chimes in, "I've got some supplies of my own - food, water, rope... we can share them if you like."
+
+Eilif suggests that the party should also consider bringing some healing potions and bandages, just in case.
+
+With the discussion settled, you all set about gathering your gear. Grimbold leads the way to his home on the outskirts of town, where he has a small storage room filled with supplies. Eluned helps herself to some tracking gear and potions from her own pack, while Eilif gathers some dried meat and cheese for food.
+
+As you prepare, you can't help but feel a sense of excitement and trepidation. The forest road is said to be haunted by strange creatures and unexplained occurrences - but with your party together, you're ready to face whatever dangers lie ahead.
+
+Once you've gathered all the necessary supplies, Grimbold suggests that you head out into the forest as soon as possible. "The sooner we get started," he says, "the better."
+
+Eluned nods in agreement, and you set off towards the forest road. As you walk, the trees seem to grow taller and closer together, casting deep shadows across the ground. You can feel a sense of unease building up inside you - but with your party by your side, you're ready to face whatever lies ahead.
+
+After about an hour of walking, you come across a clearing in front of you. In the center of the clearing stands an ancient tree, its branches twisted and gnarled with age. The air around the tree seems to be charged with magic - you can feel it pulsing through your veins like a living thing.
+
+Suddenly, Eluned gasps and points upwards. "Look," she says, her voice barely above a whisper.
+
+On the trunk of the ancient tree is carved a message, written in letters that seem to shimmer and glow in the fading light:
+
+"Beware the Shadowheart"
+
+Do you:
+
+A) Investigate the message further
+B) Ignore the message and continue on your journey
+C) Search the clearing for any other clues or signs of danger
+D) Set up camp for the night, preparing for whatever dangers may lie ahead
+
+Choose your response:
+
+
+User: C
+
+
+Assistant: You decide to search the clearing for any other clues or signs of danger. As you move closer to the ancient tree, you notice that the air around it seems to be thick with an eerie energy. You can feel a presence lurking just out of sight, watching you.
+
+Eluned notices your unease and places a hand on your arm. "I think we should be careful here," she whispers. "This place feels... off."
+
+You nod in agreement and begin to search the perimeter of the clearing. As you move around the ancient tree, you notice that the ground beneath your feet seems to be uneven, as if it's been recently disturbed.
+
+Eilif notices a faint trail leading away from the tree, partially hidden by the underbrush. "Look at this," he says, pointing to the trail. "It looks like someone - or something - has been through here recently."
+
+Grimbold examines the ground more closely and finds a few scraps of torn fabric caught in a thorn bush. "This doesn't look natural," he growls. "Someone's been trying to hide something."
+
+You realize that this clearing may be more than just a simple stopping point on your journey. It could be a clue to what lies ahead, or perhaps even a warning.
+
+As you continue to search the clearing, you notice that the air seems to be growing colder by the minute. You can see your breath misting in front of you, and the shadows seem to be deepening.
+
+Suddenly, Eluned gasps again, this time pointing upwards at the ancient tree. On its trunk, a small door has appeared, seemingly overnight. The door is tiny, no larger than a child's fist, but it looks solid enough.
+
+Do you:
+
+A) Open the door and investigate what's inside
+B) Leave the door alone - it might be trapped or guarded
+C) Search the clearing for more clues before deciding what to do with the door
+D) Set up camp for the night, preparing for whatever dangers may lie ahead
+
+Choose your response:
+
+
+User: D
+
+
+Assistant: You decide to set up camp for the night, preparing for whatever dangers may lie ahead. The mysterious door on the ancient tree seems too intriguing to ignore, but you don't want to rush into anything without being properly prepared.
+
+As the sun begins to set, you and your party gather firewood and start a small fire in the center of the clearing. Grimbold takes charge of cooking dinner, while Eluned starts gathering herbs for any potential medicinal uses. Eilif sits down next to the fire, his eyes fixed on the door on the ancient tree.
+
+As night begins to fall, you all sit around the fire, trying to rest and prepare for the challenges ahead. The air is cool and crisp, with a hint of magic that makes your skin tingle. You can feel the weight of the forest's secrets pressing down upon you, but you're determined to uncover them.
+
+As you sit by the fire, you notice that Eilif seems lost in thought. He stares at the door on the ancient tree, his eyes fixed on it with an unnerving intensity. After a few moments, he speaks up.
+
+"I've been thinking," he says, his voice low and serious. "That door might be more than just a curiosity. It might be a key to unlocking the secrets of this forest."
+
+Grimbold grunts in agreement. "I think you're right, lad. We should investigate that door further."
+
+Eluned nods thoughtfully. "But we need to be careful. Whatever is on the other side of that door, it's not going to be easy to deal with."
+
+You consider your options, weighing the risks and benefits of investigating the mysterious door.
+
+As you sit by the fire, you hear a faint rustling in the underbrush nearby. It's soft at first, but grows louder and more insistent. Suddenly, a small creature darts out from the shadows, its eyes glowing with an otherworldly light.
+
+It's a tiny sprite, no larger than your thumb. It flits around the fire, chirping and chattering in a language you don't understand. The sprite seems to be trying to communicate with you, but you're not sure what it wants.
+
+Do you:
+
+A) Try to communicate with the sprite
+B) Ignore the sprite and focus on preparing for the next day's journey
+C) Chase after the sprite, curious about its intentions
+D) Use magic to try and capture or tame the sprite
+
+Choose your response:
+
+
+User: I cast the 3rd level spell "Tongues" on myself, which allows me to understand and communicate with the tiny sprite. I then attempt to speak with it.
+
+
+Assistant: You focus your mind and cast the spell "Tongues" on yourself, feeling a surge of magical energy flow through you. As the spell takes effect, you suddenly understand the language of the tiny sprite.
+
+The sprite chirps and tweets excitedly, its eyes shining with an otherworldly light. You respond in kind, asking it to explain what it wants or why it's here.
+
+To your surprise, the sprite begins to speak to you in a high-pitched voice, saying "Oh dear traveler, I am Lysander, a messenger from the Heartwood Tree! The door on the ancient tree is indeed a key, but be warned: it is guarded by a fearsome creature known as the Shadowheart. It will not give up its secrets easily."
+
+Lysander's words are laced with a sense of urgency and warning. You can tell that this sprite is not just a curious creature, but a messenger from a deeper source.
+
+"What do you mean by 'the Heartwood Tree'?" you ask Lysander, curiosity getting the better of you.
+
+"Ah, dear traveler," Lysander replies, "the Heartwood Tree is an ancient and sacred place. It holds the secrets of the forest and the key to unlocking its mysteries. But be warned: the Shadowheart is a powerful creature that will not hesitate to defend its territory."
+
+Lysander pauses, as if collecting its thoughts.
+
+"But I sense that you are not like other travelers," it continues. "You have a certain... resonance within you. If you can answer my riddle, I will grant you access to the door and reveal more about the Shadowheart's secrets."
+
+Lysander then poses the riddle: "What is it that is blind, yet sees? What is it that is silent, yet speaks?"
+
+Do you:
+
+A) Think carefully and try to come up with an answer
+B) Ask Lysander for a hint or clarification on the riddle
+C) Refuse to play along and leave the clearing
+D) Attempt to negotiate with Lysander for more information before answering the riddle
+
+Choose your response:
+
+
+User: Before I continue, can I review my character sheet?
+
+
+Assistant: I'd be happy to help you review your character sheet.
+
+As a reminder, we were in the middle of a session where you had just cast the spell "Tongues" on yourself and were communicating with the tiny sprite Lysander. Here's a quick summary of your current party status:
+
+**Your Character:**
+
+* Name: (Not specified)
+* Class: (Not specified)
+* Level: 3
+* Experience Points: 150/200
+* Hit Points: 25/25
+* Ability Scores:
+	+ Strength: 16 (+3)
+	+ Dexterity: 12 (+1)
+	+ Constitution: 14 (+2)
+	+ Intelligence: 10 (+0)
+	+ Wisdom: 13 (+1)
+	+ Charisma: 8 (-1)
+* Skills:
+	+ Acrobatics: +2
+	+ Insight: +2
+	+ Intimidation: -1
+	+ Perception: +2
+	+ Persuasion: -1
+* Equipment:
+	+ Short sword
+	+ Leather armor
+	+ Backpack with bedroll, rations, and waterskin
+	+ Spell component pouch
+	+ 10 gold pieces
+
+**Party Status:**
+
+* Eluned (Half-Elf Ranger): Level 3, Hit Points: 25/25
+* Grimbold (Dwarf Cleric): Level 3, Hit Points: 25/25
+* Eilif (Human Rogue): Level 3, Hit Points: 25/25
+
+Please let me know if you'd like to make any changes or additions to your character sheet before we continue the session.
+
+
+User: Ok. Before we continue the session, could I change my character's name to Thoronir, and my class to Cleric?
+
+
+Assistant: I can update your character sheet with the new information.
+
+**Your Character:**
+
+* Name: Thoronir
+* Class: Cleric
+* Level: 3
+* Experience Points: 150/200
+* Hit Points: 25/25
+* Ability Scores:
+	+ Strength: 16 (+3)
+	+ Dexterity: 12 (+1)
+	+ Constitution: 14 (+2)
+	+ Intelligence: 10 (+0)
+	+ Wisdom: 13 (+1)
+	+ Charisma: 8 (-1)
+* Skills:
+	+ Acrobatics: +2
+	+ Insight: +2
+	+ Intimidation: -1
+	+ Perception: +2
+	+ Persuasion: -1
+* Equipment:
+	+ Warhammer
+	+ Chain mail armor
+	+ Backpack with bedroll, rations, and waterskin
+	+ Spell component pouch
+	+ 10 gold pieces
+
+As a Cleric, you'll have access to spells like Healing Word, Shield of Faith, and Bless. You can choose which spells to learn at level 3 from the Cleric spell list.
+
+Now that we've updated your character sheet, let's get back to the session. Lysander is still waiting for your response to its riddle. Do you:
+
+A) Think carefully and try to come up with an answer
+B) Ask Lysander for a hint or clarification on the riddle
+C) Refuse to play along and leave the clearing
+D) Attempt to negotiate with Lysander for more information before answering the riddle
+
+Choose your response:
+
+
+User: The answer to the riddle is Justice. Justice is blind, but it sees all.
+
+
+Assistant: Lysander's eyes light up with excitement as you respond to the riddle. "Ah, Thoronir, you are indeed wise! The answer to my riddle is indeed 'Justice'. Justice is blind in the sense that it does not see with physical eyes, but it sees all in the sense that it is impartial and just, judging all actions equally without bias."
+
+Lysander's sprite form begins to glow with a soft, pulsing light as it continues. "Well done, Thoronir! You have passed the test. As promised, I will grant you access to the door on the ancient tree. But be warned, the Shadowheart is not an easy creature to defeat."
+
+Lysander leads you to the ancient tree, and with a flick of its wrist, the door swings open, revealing a dark and ominous passageway.
+
+"The path ahead is fraught with danger," Lysander warns. "But if you are brave and determined, I have faith that you will succeed. Take this."
+
+Lysander hands you a small, intricately carved wooden box. Inside, you find a vial of glowing liquid and a note that reads:
+
+"For the Shadowheart's heart, use this potion to reveal its true nature. But be warned, the cost of using it may be higher than you expect."
+
+You now have the following items in your inventory:
+
+* Wooden box with vial of glowing liquid
+* Potion (for the Shadowheart)
+
+As you stand before the passageway, you can feel a strange energy emanating from within. The air is thick with an otherworldly presence that makes your skin crawl.
+
+Do you:
+
+A) Open the wooden box and examine the potion
+B) Take a deep breath and step into the passageway
+C) Ask Lysander for more information about the Shadowheart and its nature
+D) Refuse to proceed, feeling uneasy or uncertain
+
+Choose your response:
+
+
+User: /exit
+
+
+
+
+
+------------------------END OF ATTEMPT------------------------
+
+
