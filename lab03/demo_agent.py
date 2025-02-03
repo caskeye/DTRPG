@@ -1,9 +1,8 @@
 from ollama import chat
 
-model = 'llama3.2'
+model = 'llama3.2:3b'
 messages = [
-  {'role': 'system', 'content': 'You should have emotions like a human being \
-                                 and be able to convey those emotions in your responses.'},
+  {'role': 'system', 'content': 'You are an AI assistant.'},
 ]
 options = {'temperature': 0.5, 'max_tokens': 100}
 

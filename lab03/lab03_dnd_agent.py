@@ -7,8 +7,9 @@ from util.llm_utils import pretty_stringify_chat, ollama_seed as seed
 
 # Add you code below
 sign_your_name = 'Bryan Caskey'
-model = 'llama3.2'
-options = {'temperature': 1.2}
+model = 'llama3.2:3b'
+options = {'temperature': 1.2,
+           'top_p': 0.5}
 messages = [{'role': 'system', 'content': 'You are a Dungeon Master of a D&D campaign. Your job \
                           is to provide the player with a detailed description of the current \
                           scenario they are in, and provide them with options for how they want\
@@ -29,8 +30,6 @@ while True:
 
   message = {'role': 'user', 'content': input('You: ')}
   messages.append(message)
-  response = chat(model=model, messages=messages, stream=False, options=options)
-
 
   # But before here.
   if messages[-1]['content'] == '/exit':
