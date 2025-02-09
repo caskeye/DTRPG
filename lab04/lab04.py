@@ -28,5 +28,5 @@ lab04_params = {
 
 if __name__ ==  '__main__':
     # run lab04.py to test your template interactively
-    run_console_chat('Bryan', **lab04_params)
+    run_console_chat(**lab04_params)
     pass
