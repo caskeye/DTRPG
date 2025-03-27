@@ -6,12 +6,16 @@
 - Plot Generation
 - Trading/Merchants
 - NPC Dialogue
-- Rudimentary Combat System (Needs Defined Further, may be axed due to limitations of LLMs)
+- Rudimentary Combat System 
+  - Needs Defined Further, may be axed due to limitations of LLMs
 - Inventory Management
 - UI
 - Session/Plot Persistance
-- Monster Manual (Enemy Database with RAG)
-
+- Monster Manual 
+  - Enemy Database with RAG
+- Reading the Player's Character Sheet
+  - Stored as an external file the player can edit.
+- 
 
 ### Requirements 2-7
 - Needs to implement **RAG**
