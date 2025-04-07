@@ -1,0 +1,5 @@
+- [x] Complete process_response function
+  - This function will be similar to the code found in<mark> **tool_demo.py** </mark>after the line `response = chat.completion...`.
+- [x] Update template file
+  - Need to make the model aware that skill checks need to be rolled for.
+- [ ] Comment on Canvas a "Wonderful but Realistic" use of tool calling.

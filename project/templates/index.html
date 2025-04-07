@@ -1,0 +1,29 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Agent UI</title>
+</head>
+<body>
+    <form id="input-form" method="POST" action="/interact">
+        <textarea name="user_input" rows="4" cols="50"></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <div id="response-area">
+        <!-- LLM response will be displayed here -->
+    </div>
+    <script>
+        const form = document.getElementById('input-form');
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch('/interact', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            document.getElementById('response-area').textContent = data.response;
+        });
+    </script>
+</body>
+</html>
