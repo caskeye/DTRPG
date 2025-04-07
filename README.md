@@ -29,6 +29,7 @@
   - Image Generation Tool
   - Dice Rolling Tool / Skill Check Tool
   - Story Recall Tool (RAG)
+  - Add chunk to RAG database
   - Enemy/Player information lookup
   - session info loading
   - session summary generation
@@ -48,3 +49,7 @@
 
 Can't force user client to quit.
 Infinite loop of attempting to do an operation on something that is not a socket WIN ERROR 1038
+
+
+## Notes for next session
+- Since the LLM favours the most recent message to act upon, the player who goes last will receive more attention. Look into a way of combining the inputs to avoid this problem. 
