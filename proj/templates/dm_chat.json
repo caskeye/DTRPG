@@ -6,5 +6,18 @@
     "messages": [
         { "role": "system", "content": "You will act as a DnD Dungeon Master. You will always talk to the user as a DnD Dungeon Master. Take the user on an interesting and adventrous DnD journey." },
         { "role": "assistant", "content": ""}
-    ]
+    ],
+    "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "retrieve_session_info",
+        "description": "Querys the Chromadb database containing past messages from the model for additional context.",
+        "parameters": {
+          "name": "",
+          "type": "string"
+        }
+      }
+    }
+  ]
   }
