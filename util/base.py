@@ -4,7 +4,7 @@ sys.path.append(str(Path(__file__).parents[1]))
 
 from dndnetwork import DungeonMasterServer, PlayerClient
 from llm_utils import TemplateChat
-from proj.ragu import ChromaDBClient as rag
+from proj.ragu import ChromaDBClient as chroma, OllamaEmbeddingFunction
 
 
 class DungeonMaster:
@@ -13,9 +13,9 @@ class DungeonMaster:
         self.server = DungeonMasterServer(self.game_log, self.dm_turn_hook)
         self.chat = TemplateChat.from_file('util/templates/dm_chat.json', sign='hello')
         self.start = True
-        self.chroma = rag.ChromaDBClient(
+        self.rag = chroma(
             collection_name='session_info',
-            embedding_function=rag.OllamaEmbeddingFunction(model_name='nomic-embed-text')
+            embedding_function=OllamaEmbeddingFunction(model_name='nomic-embed-text')
         )
 
     def start_server(self):
@@ -29,15 +29,17 @@ class DungeonMaster:
             self.start = False
         else: 
             dm_message = self.chat.send('\n'.join(self.game_log))
-
+        
         # Process the DM's message and update the game log
-        self.chroma.add_documents([
+        self.rag.add_documents([
             {
                 'id': 'dm_message_' + str(len(self.game_log)),
                 'text': dm_message,
                 'metadata': {'role': 'dm'}
             }
         ])
+
+        print(f"[DEBUG] session_info: {self.rag.peek()}")
 
         # Return a message to send to the players for this turn
         return dm_message 
