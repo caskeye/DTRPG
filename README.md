@@ -53,3 +53,26 @@ Infinite loop of attempting to do an operation on something that is not a socket
 
 ## Notes for next session
 - Since the LLM favours the most recent message to act upon, the player who goes last will receive more attention. Look into a way of combining the inputs to avoid this problem. 
+
+
+
+
+## Project Files
+### game.py
+
+- imports `base.py`
+- initialize DM (imported from `base.py`)
+- start server
+
+### base.py
+
+- imports `dndnetwork.py` & `llm_utils.py`
+- Defines DungeonMaster class
+  - start_server()
+    - Called in `game.py`, implemented in `dndnetwork.py`
+  - dm_turn_hook()
+    - this is where the AI processes happen.
+    - self.chat is defined in `llm_utils.py`
+- Defines Player class
+  - 
+
