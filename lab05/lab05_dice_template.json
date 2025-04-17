@@ -10,7 +10,7 @@
   "tools": [
     {
       "type": "function",
-      "funciton": {
+      "function": {
         "name": "roll_for",
         "description": "Performs a dice roll for a skill check",
         "parameters": {

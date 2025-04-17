@@ -22,6 +22,8 @@ class ChromaDBClient:
         Add documents to the collection
         """
         print(f"[DEBUG] Adding {len(documents)} documents to ChromaDB collection '{self.collection_name}'")
+        """ This is a batched implementation of adding documents, may give better performance.
+
         for i in range(0, len(documents), batch_size):
             batch = documents[i:i + batch_size]
             self.collection.add(
@@ -29,18 +31,24 @@ class ChromaDBClient:
                 documents=[doc["text"] for doc in batch],
                 metadatas=[doc["metadata"] for doc in batch]
             )
+            
+        """    
+        self.collection.add(
+            ids=[doc["id"] for doc in documents],
+            documents=[doc["text"] for doc in documents],
+            metadatas=[doc["metadata"] for doc in documents]
+        )
         print(f"[DEBUG] Added {len(documents)} documents to ChromaDB collection '{self.collection_name}'")
 
     def query(self, query_text: str, n_results: int = 5):
         """
         Query the collection for similar documents
         """
-        embedding = self.embedding_function([query_text])[0]
         results = self.collection.query(
-            query_embeddings=[embedding],
+            query_texts=[query_text],
             n_results=n_results
         )
-        return results["documents"][0], results["distances"][0]
+        return results["documents"]
     
     def peek(self):
         """

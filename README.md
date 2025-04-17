@@ -54,6 +54,7 @@ Infinite loop of attempting to do an operation on something that is not a socket
 ## Notes for next session
 - Since the LLM favours the most recent message to act upon, the player who goes last will receive more attention. Look into a way of combining the inputs to avoid this problem. 
 
+- [Found a monster manual](https://github.com/ceryliae/DnDAppFiles/blob/master/Bestiary/Monster%20Manual%20Bestiary.xml)
 
 
 

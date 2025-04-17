@@ -11,7 +11,7 @@ class DungeonMaster:
     def __init__(self):
         self.game_log = ['START']
         self.server = DungeonMasterServer(self.game_log, self.dm_turn_hook)
-        self.chat = TemplateChat.from_file('util/templates/dm_chat.json', sign='hello')
+        self.chat = TemplateChat.from_file('proj/templates/dm_chat.json', sign='hello')
         self.start = True
         self.rag = chroma(
             collection_name='session_info',
@@ -23,7 +23,9 @@ class DungeonMaster:
 
     def dm_turn_hook(self):
         dm_message = ''
+        
         # Do DM things here. You can use self.game_log to access the game log
+        print(f"[DEBUG] DM Starting Turn")
         if self.start:
             dm_message = self.chat.start_chat()
             self.start = False
