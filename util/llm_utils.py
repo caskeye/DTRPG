@@ -40,7 +40,9 @@ def tool_tracker(func):
     return wrapper
 
 #Tool
-def retrieve_session_info(search_string: str):
+def retrieve_session_info(query: str, rag: object) -> str:
+    print(f'[DEBUG] retrieve_session_info called with query: {query}')
+    return rag.query(query)
     pass
 
 def run_console_chat(**kwargs):
