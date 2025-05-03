@@ -7,6 +7,9 @@ import logging
 from pathlib import Path
 from types import MethodType
 from collections import defaultdict
+import sys
+sys.path.append(str(Path(__file__).parents[1]))
+
 
 ollama_seed = lambda x: int(str(int(hashlib.sha512(x.encode()).hexdigest(), 16))[:8])
 
@@ -35,6 +38,12 @@ def tool_tracker(func):
         print('\n\nTools Called: \n', calls, '\n\n')
         return result
     return wrapper
+
+#Tool
+def retrieve_session_info(query: str, rag: object) -> str:
+    print(f'[DEBUG] retrieve_session_info called with query: {query}')
+    return rag.query(query)
+    pass
 
 def run_console_chat(**kwargs):
     chat = TemplateChat.from_file(**kwargs)

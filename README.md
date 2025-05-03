@@ -54,6 +54,7 @@ Infinite loop of attempting to do an operation on something that is not a socket
 ## Notes for next session
 - Since the LLM favours the most recent message to act upon, the player who goes last will receive more attention. Look into a way of combining the inputs to avoid this problem. 
 
+- [Found a monster manual](https://gist.github.com/tkfu/9819e4ac6d529e225e9fc58b358c3479)
 
 
 

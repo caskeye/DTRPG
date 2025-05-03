@@ -25,7 +25,9 @@ class DungeonMaster:
 
     def dm_turn_hook(self):
         dm_message = ''
+        
         # Do DM things here. You can use self.game_log to access the game log
+        print(f"[DEBUG] DM Starting Turn")
         if self.start:
             dm_message = self.chat.start_chat()
             self.start = False

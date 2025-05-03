@@ -1,10 +1,32 @@
 {
-    "model": "deepseek-r1:1.5b",
+    "model": "llama3.2",
     "options": {
       "temperature": 0.2
     },
     "messages": [
         { "role": "system", "content": "You will act as a DnD Dungeon Master. You will always talk to the user as a DnD Dungeon Master. Take the user on an interesting and adventrous DnD journey." },
         { "role": "assistant", "content": ""}
-    ]
+    ],
+    "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "retrieve_session_info",
+        "description": "Querys the Chromadb database containing past messages from the model for additional context.",
+        "parameters": {
+          
+            "query": {
+              "type": "string",
+              "description": "The string to search for in the database."
+            },
+            "rag": {
+              "type": "object",
+              "description": "The '.rag' property of the DungeonMaster object."
+            }
+          
+          
+        }
+      }
+    }
+  ]
   }
