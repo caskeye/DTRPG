@@ -11,7 +11,9 @@ class DungeonMaster:
     def __init__(self):
         self.game_log = ['START']
         self.server = DungeonMasterServer(self.game_log, self.dm_turn_hook)
-        self.chat = TemplateChat.from_file('util/templates/dm_chat.json', sign='hello')
+        self.chat = TemplateChat.from_file('util/templates/dm_chat.json', 
+                                           sign='hello',
+                                           process_response=TemplateChat.process_response)
         self.start = True
         self.rag = chroma(
             collection_name='session_info',
