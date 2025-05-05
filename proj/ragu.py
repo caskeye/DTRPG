@@ -40,7 +40,7 @@ class ChromaDBClient:
         )
         print(f"[DEBUG] Added {len(documents)} documents to ChromaDB collection '{self.collection_name}'")
 
-    def query(self, query_text: str, n_results: int = 5):
+    def query(self, query_text: str, n_results: int = 1):
         """
         Query the collection for similar documents
         """

@@ -39,11 +39,7 @@ def tool_tracker(func):
         return result
     return wrapper
 
-#Tool
-def retrieve_session_info(query: str, rag: object) -> str:
-    print(f'[DEBUG] retrieve_session_info called with query: {query}')
-    return rag.query(query)
-    pass
+
 
 def run_console_chat(**kwargs):
     chat = TemplateChat.from_file(**kwargs)
@@ -63,6 +59,7 @@ class TemplateChat:
     def __init__(self, template, sign=None, **kwargs):
         self.instance = template
         self.instance['options']['seed'] = hash(str(sign))
+        self.dungeon_master = kwargs['dungeon_master'] if 'dungeon_master' in kwargs else None
         self.messages = self.instance['messages']
         self.end_regex = kwargs['end_regex'] if 'end_regex' in kwargs else None
         self.function_caller = kwargs['function_call_processor'] if 'function_call_processor' in kwargs else None
@@ -124,14 +121,8 @@ class TemplateChat:
             self.messages.append({'role': 'tool',
                                     'name': response.message.tool_calls[0].function.name,
                                     'arguments': response.message.tool_calls[0].function.arguments,
-                                    'content': process_function_call(response.message.tool_calls[0].function)
+                                    'content': self.dungeon_master.process_function_call(response.message.tool_calls[0].function)
                                     })
             response = self.completion()
         return response
     
-@tool_tracker
-def process_function_call(self, function_call):
-    name = function_call.name
-    args = function_call.arguments
-
-    return globals()[name](**args)

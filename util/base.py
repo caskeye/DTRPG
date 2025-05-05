@@ -3,7 +3,7 @@ import sys
 sys.path.append(str(Path(__file__).parents[1]))
 
 from dndnetwork import DungeonMasterServer, PlayerClient
-from llm_utils import TemplateChat
+from llm_utils import TemplateChat, tool_tracker
 from proj.ragu import ChromaDBClient as chroma, OllamaEmbeddingFunction
 
 
@@ -13,7 +13,8 @@ class DungeonMaster:
         self.server = DungeonMasterServer(self.game_log, self.dm_turn_hook)
         self.chat = TemplateChat.from_file('proj/templates/dm_chat.json', 
                                            sign='hello',
-                                           process_response=TemplateChat.process_response)
+                                           process_response=TemplateChat.process_response,
+                                           dungeon_master=self)
         self.start = True
         self.rag = chroma(
             collection_name='session_info',
@@ -47,6 +48,26 @@ class DungeonMaster:
 
         # Return a message to send to the players for this turn
         return dm_message 
+    
+    
+
+    @tool_tracker
+    def process_function_call(self, function_call):
+        name = function_call.name
+        args = function_call.arguments
+
+        if hasattr(self, name):
+            method = getattr(self, name)  # Get the method by name
+            return method(**args)  # Call the method with the provided arguments
+        else:
+            raise AttributeError(f"Method '{name}' not found in DungeonMaster.")
+    
+    #Tool
+    def retrieve_session_info(self, query: str) -> str:
+        print(f'[DEBUG] retrieve_session_info called with query: {query}')
+        return self.rag.query(query)
+        pass
+
 
 
 class Player:
@@ -62,3 +83,6 @@ class Player:
 
     def take_turn(self, message):
         self.client.send_message(message)
+
+
+
