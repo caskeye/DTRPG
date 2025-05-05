@@ -63,9 +63,11 @@ class DungeonMaster:
             raise AttributeError(f"Method '{name}' not found in DungeonMaster.")
     
     #Tool
-    def retrieve_session_info(self, query: str) -> str:
+    def retrieve_session_info(self, query: str = "search") -> str:
         print(f'[DEBUG] retrieve_session_info called with query: {query}')
-        return self.rag.query(query)
+        documents = self.rag.query(query, 1)
+        print(f'[DEBUG] Retrieved documents: {documents}')
+        return "\n".join(documents[0])
         pass
 
 
