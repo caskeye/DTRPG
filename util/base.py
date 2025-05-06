@@ -49,7 +49,11 @@ class DungeonMaster:
         # Return a message to send to the players for this turn
         return dm_message 
     
-    
+
+
+
+
+ 
 
     @tool_tracker
     def process_function_call(self, function_call):
@@ -70,6 +74,12 @@ class DungeonMaster:
         return "\n".join(documents[0])
         pass
 
+    #Tool
+    def default(self):
+        print(f'[DEBUG] default tool called')
+        return ""
+        pass
+
 
 
 class Player:
@@ -86,5 +96,13 @@ class Player:
     def take_turn(self, message):
         self.client.send_message(message)
 
+
+
+
+
+
+
+
+    
 
 

@@ -84,6 +84,7 @@ class TemplateChat:
         response = self.completion(**kwargs)
         message = response['message']
         self.messages.append({'role': message.role, 'content': message.content})
+        print("\n",self.messages,"\n")
         logging.info(f'{message.role}: {message.content}')
         return response 
 
@@ -101,6 +102,7 @@ class TemplateChat:
 
             logging.info(f'User: {prompt}')
             self.messages.append({'role': 'user', 'content': prompt})
+            
             if prompt == '/exit':
                 break
 
@@ -114,15 +116,19 @@ class TemplateChat:
 #Newly defined functions starting here
 #----------------------------------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------------------------------
-    def process_response(self, response):
+    def process_response(self, response, **kwargs):
         print(f"[DEBUG] processing response")
-        if response.message.tool_calls:
-            print(f"[DEBUG] tool Call detected: {response.message.tool_calls[0].function.name}")
-            self.messages.append({'role': 'tool',
-                                    'name': response.message.tool_calls[0].function.name,
-                                    'arguments': response.message.tool_calls[0].function.arguments,
-                                    'content': self.dungeon_master.process_function_call(response.message.tool_calls[0].function)
-                                    })
-            response = self.completion()
+        try:
+            print(f"[DEBUG] response: {response.message.tool_calls}")
+            if response.message.tool_calls:
+                print(f"[DEBUG] tool Call detected: {response.message.tool_calls[0].function.name}")
+                self.messages.append({'role': 'tool',
+                                        'name': response.message.tool_calls[0].function.name,
+                                        'arguments': response.message.tool_calls[0].function.arguments,
+                                        'content': self.dungeon_master.process_function_call(response.message.tool_calls[0].function)
+                                        })
+                response = self.chat_turn(**kwargs)
+        except Exception as e:
+            print(f"[ERROR] Error processing tool call: {e}")
         return response
     
