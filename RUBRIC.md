@@ -83,3 +83,6 @@
     -Voiced AI narration for dramatic storytelling.
     -Dynamic map generation based on player exploration.
 
+These are just a few examples of some scenario types you can build. Each section above will be a section in your project report. Section 1 will provide clear and detailed descriptions of the scenarios that your system is capable of handling. Sections 2 through 6 will point out how you handled implementation of scenarios listed in Section 1 using the AI method.  You may apply multiple AI methods to a single scenario; however, ensure that use of each method outlined in sections 2 through 6 is demonstrated to implement at least one scenario effectively. Report should be a markdown file that you commit to your project repository called Project.md.
+
+**Please DO NOT include the pdf or the doc file of your report in your codebase (GitHub repository). This makes the codebase large and more difficult to clone your repository.** 
